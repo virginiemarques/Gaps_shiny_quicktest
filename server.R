@@ -106,8 +106,8 @@ function(input, output){
       # Background
       addTiles() %>%
       # Background
-      addProviderTiles(providers$Hydda.Base,
-                       options = providerTileOptions(minZoom = 1, maxZoom = 500)) %>%
+      #addProviderTiles("Thunderforest.Landscape", options = providerTileOptions(minZoom = 1, maxZoom = 500))  %>%
+      addProviderTiles("Esri.WorldStreetMap", options = providerTileOptions(minZoom = 1, maxZoom = 500))  %>%
       clearBounds() %>%
       # View
       setView( lat=10, lng=0 , zoom=2) %>%
